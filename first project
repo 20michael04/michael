@@ -1,0 +1,45 @@
+print("Welcome to Incheon Airport")#Let's begin
+print(" ")
+print("Officer: Can I see your passport, please?")
+answer1 = input("What is your answer?: sure or sorry      ")
+
+
+if answer1 == "sure":
+  print(" ")
+  print("Officer: Okay, thank you")
+  print("Officer: What is your name? ")
+  name = input("What is your answer?:      ")
+  print("Officer: Hi, " + name)
+  print(" ")
+  print("Officer: How old are you?")
+  age = int(input("What is your answer?: 0~100     "))
+  print(" ")
+  print("Officer: Why are you travelling to Korea?")
+  reason = input("What is your answer?: for travel, to see my family, to kill president     ")
+  if reason == "for travel":
+    print(" ")
+    print("Officer: Okay, you may go")
+    print(" " + name + " has left the airport")
+  elif reason == "to see my family":
+    print(" ")
+    print("Officer: Okay, you may go")
+    print(" " + name + " has left the airport")
+  elif reason == "to kill president":
+    print(" ")
+    print("Officer: Okay, you may go to jail")
+    print(" " + name + " is kicked out of the airport")
+  else:
+    print(" ")
+    print("Officer: Sorry, you may not go")
+    print(" " + name + " has left the airport")
+elif answer1 == "sorry":
+  print(" ")
+  print("'Officer': Sorry, you are not allowed to board the Inchein Airport")
+  print(" ")
+  print("You are kicked out of the airport")
+  
+else:
+  print(" ")
+  print("'Officer': Sorry, I don't understand, you are not allowed to board the Inchein Airport")
+  print(" ")
+  print("You are kicked out of the airport")
